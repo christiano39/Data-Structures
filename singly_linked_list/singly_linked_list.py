@@ -50,9 +50,7 @@ class LinkedList:
             return current_tail.value
 
         new_tail = self.head
-        while new_tail.next != None:
-            if new_tail.next == self.tail:
-                break
+        while new_tail.next != self.tail:
             new_tail = new_tail.next
 
         old_tail = self.tail
